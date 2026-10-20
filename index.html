@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>root@mustio.co | giriş terminali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="term" id="term">
+  <div class="bar"><span class="dot r"></span><span class="dot"></span><span class="dot"></span><span>root@mustio.co:~$ giris</span></div>
+  <div class="body">
+    <h1 class="logo glitch">mustio<span>.co</span></h1>
+    <div class="dim">güvenli giriş terminali v1.0 (sözde)</div>
+    <div id="boot" aria-live="polite"></div>
+
+    <form id="f" novalidate autocomplete="off">
+      <div class="line"><label for="u">kullanıcı&gt;</label><input id="u" type="text" autocapitalize="none" autocorrect="off" spellcheck="false"></div>
+      <div class="line"><label for="p">şifre&gt;</label><input id="p" type="password"></div>
+      <button class="go" id="go" type="submit">[ ENTER ] erişim iste</button>
+      <p class="hint">demo giriş: root / mustio2026<br>Bu sayfa sadece ön yüz tasarımıdır, gerçek bir güvenlik sağlamaz.</p>
+    </form>
+    <div id="out" role="status" aria-live="polite"></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
